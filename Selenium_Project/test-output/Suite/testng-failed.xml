@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Tests1(failed)">
+    <classes>
+      <class name="test1.NewTourTestWithXpath">
+        <methods>
+          <include name="Verifylogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test1.NewTourTestWithXpath -->
+    </classes>
+  </test> <!-- Tests1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

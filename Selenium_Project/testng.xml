@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+<suite name="Suite" parallel = "tests" thread-count = "2">
+ <test name = "Tests1" > 
+   <classes> 			 
+       <class name = "test1.ChromeTest" /> 		
+   </classes> 	
+ </test> 	
+ <test name = "Tests2"> 		 
+   <classes> 			   
+       <class name = "test1.FireFoxTest" />
+   </classes>
+ </test>
+</suite> 
+-->
+<!--
+<suite name="Suite" parallel = "methods" thread-count = "1">
+ <test name = "Tests1" > 
+   <classes> 			 
+       <class name = "test1.ChromeTest" /> 		
+   </classes>
+ </test>
+</suite> 
+-->
+<!--
+<suite name="Suite" parallel = "classes" thread-count = "1">
+ <test name = "Tests1" > 
+   <classes> 			 
+        <class name = "test1.ChromeTest" />
+        <class name = "test1.FireFoxTest" /> 	 		
+         		
+   </classes>
+ </test>
+</suite> 
+
+-->
+
+<!--<suite name="Suite">
+ <test thread-count="5" name="Test1">
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="test1.MultiBrowser"/>
+    </classes>
+  </test> 
+<test thread-count="5" name="Test2">
+    <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="test1.MultiBrowser"/>
+    </classes>
+  </test>  -->
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <!--<parameter name="username" value="PPP"></parameter>
+    <parameter name="password" value="PPP"></parameter>-->
+    <classes>
+      <class name="test.LoginTest"/>
+    </classes>
+  </test> 
+</suite> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
